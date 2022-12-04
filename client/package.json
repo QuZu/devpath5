@@ -1,6 +1,7 @@
 {
   "name": "devpaths5",
   "version": "0.1.0",
+  "homepage": "https://devpath5-yterbe.onrender.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

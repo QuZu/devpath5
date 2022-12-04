@@ -1,70 +1,11 @@
-# Getting Started with Create React App
+As it is said in the document, when /messages is written in url area, the hex code of this message written instead of messages  is printed on the screen. For example, when /myfirstapp is typed, it returns the hex encoding of myfirstapp as SHA256 on the screen.
+Similarly, when /messages/<hash> is written, if the string of the hash code has been added before, it prints it to the screen, if not, it writes 404 NOT FOUND.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I tried to deploy my application to any web site. But even though I tried deploy for 2 days, I could not solve the problem on the site. The site is going live, it says deploy succesfull, but it doesn't work as it works in localhost. However, it works very well in localhost.
+How can you scale your implementation?
+First of all, I store the data in local because I didn't want to use a server. For this reason, it is a small application that does not require server requests. However, it can be made more comprehensive in the future by using database and server.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+How did you deploy this application?
+The errors I encountered during the deployment process only load my home page and cannot fulfill the rest of the requests.
+How can you improve this process and make it easy to maintain?
+It is very difficult to deploy on some deployment sites.Sometimes,many different deployment or environment variables need to be written. I think they could be simpler. Apart from that, if deploy places such as github are used, the changes made in the project are arranged more easily. Because the changes made are reflected in the deployment in a very short time.So,using git or using repository provides faster maintain
