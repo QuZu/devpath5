@@ -1,7 +1,6 @@
 import React from "react";
 import { useState ,useEffect } from "react";
 import {useParams} from "react-router-dom"
-var mycrypto = require('crypto')
 function HashPage() {
   const{hashvalue}=useParams()
   let mystringarray=localStorage.getItem("allHash");
@@ -10,7 +9,6 @@ function HashPage() {
   console.log("Myarray:",allarray);
   const[loading,setLoading]=useState(false)
   const[mymessage,setmymessage]=useState("");
-  var message;
   const getresult = async()=>{
     try{
       var result=(allarray.find(({hash})=>hash === hashvalue));
